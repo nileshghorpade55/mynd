@@ -1,0 +1,47 @@
+.pricing-section {
+  padding: 80px 5%;
+   background-color: royalblue !important;
+  color: white;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.pricing-table {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  align-items: center;
+  transition: 0.3s;
+}
+
+.table-row:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.header {
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.highlight {
+  color: #ffeaa7;
+  font-weight: bold;
+}
+
+.danger {
+  color: #ff7675;
+  font-weight: bold;
+}

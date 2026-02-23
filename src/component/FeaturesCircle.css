@@ -1,0 +1,113 @@
+.features-section {
+  padding: 80px 0;
+   background-color: #eff1f5; /* Dark Blue */
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background: url("../assets/image/truck.png") no-repeat right bottom;
+ 
+  background-size: 100% 100%;
+  z-index: 1;
+  width: 90%;
+  height: 100%;
+
+  pointer-events: none;
+}
+.right-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.circle-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  z-index: 2;   /* IMPORTANT */
+}
+
+/* Center Circle */
+.center-circle {
+  position: absolute;
+ 
+  background: white;
+  border: 6px solid #e9d5ff;
+
+  display: flex;
+  flex-direction: column;
+
+
+  left: 60%;  /* slightly on truck */
+  top: 30%;
+  
+  text-align: center;
+
+  z-index: 3;   /* VERY IMPORTANT */
+}
+
+.center-circle h2 {
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.center-circle p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Feature Boxes */
+.feature {
+  position: absolute;
+  background: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  font-weight: 500;
+  transition: 0.3s;
+  
+}
+
+.feature svg {
+  font-size: 18px;
+}
+
+/* Hover */
+.feature:hover {
+  transform: scale(1.05);
+}
+
+/* Left Positions */
+.left.top { top: 40px; left: 0; border: 2px solid #c084fc; color: #7c3aed; }
+.left.middle { top: 200px; left: -20px; border: 2px solid #facc15; color: #ca8a04; }
+.left.bottom { bottom: 40px; left: 0; border: 2px solid #34d399; color: #059669; }
+
+/* Right Positions */
+.right.top { top: 40px; right: 0; border: 2px solid #c084fc; color: #7c3aed; }
+.right.middle { top: 200px; right: -20px; border: 2px solid #facc15; color: #ca8a04; }
+.right.bottom { bottom: 40px; right: 0; border: 2px solid #34d399; color: #059669; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .circle-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .center-circle {
+    position: relative;
+    transform: none;
+    margin: 40px auto;
+  }
+
+  .feature {
+    position: relative;
+    margin: 15px auto;
+    width: fit-content;
+  }
+}

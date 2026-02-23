@@ -1,0 +1,48 @@
+/* Main Slider Container */
+.slider {
+  height: 80vh;          /* Full screen */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Carousel Image */
+.carousel-item {
+  position: relative;
+  height: 70vh;
+}
+
+.carousel-item img {
+  width: 80%;
+  height: 70vh;     /* responsive height */        /* Full screen height */
+  object-fit: cover;      /* Fill without black space */
+  object-position: center;
+  display: block;   /* VERY IMPORTANT */
+}
+
+/* Dark Overlay */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2); /* reduce darkness */
+  z-index: 1;
+}
+
+/* Caption */
+.carousel-caption {
+  z-index: 2;
+  bottom: 30%;
+}
+
+/* Navigation Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Optional: Make arrows more visible */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60%;
+}

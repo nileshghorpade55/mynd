@@ -1,0 +1,17 @@
+.service-card {
+   background-color: rgb(231, 233, 238) !important;
+  border-radius: 0 80px 0 0;   /* curved top-right */
+  box-shadow: 0 8px 20px rgba(243, 239, 239, 0.15);
+  transition: 0.3s ease;
+  position: relative;
+  border-left: 5px solid #d5def0;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-icon {
+  font-size: 50px;
+  color: #e1e4e9;
+}
