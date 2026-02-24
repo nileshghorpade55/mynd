@@ -1,0 +1,8 @@
+.store-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}

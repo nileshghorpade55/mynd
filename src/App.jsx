@@ -9,6 +9,7 @@ import "./App.css";
 import MyndContext from "./context/mynd";   
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import StoreSection from "./component/StoreSection";
 
 
 
@@ -22,7 +23,7 @@ function App() {
         </MyndContext.Provider>
          <OtherServices />
         <PricingComparison />
-
+      <StoreSection/>
       <Footer />
     </>
   );

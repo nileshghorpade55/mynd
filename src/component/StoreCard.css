@@ -1,0 +1,83 @@
+.store-card {
+  width: 350px;
+  background: #efefef;
+  border-radius: 25px;
+  padding: 30px;
+  border: 2px solid #222;
+  transition: 0.3s ease;
+}
+
+.store-card:hover {
+  transform: translateY(-6px);
+}
+
+.store-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.store-address {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.rating-section {
+  margin-bottom: 25px;
+}
+
+.google-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.google-icon {
+  font-weight: bold;
+  color: #4285f4;
+  font-size: 18px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rating-number {
+  font-weight: 600;
+}
+
+.star-icons {
+  color: #000;
+}
+
+.review-count {
+  color: #666;
+}
+
+.button-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.button-group button {
+  background-color: #c9744f;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #a85a3a;
+}
