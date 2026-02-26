@@ -11,7 +11,7 @@ const services = [
   { icon: "bi-person-hearts", title: "Kids Dry Clean" },
 ];
 
-function OtherServices() {
+function OtherServices({ openModal }) {
   return (
     <div id="OtherServices" className="container py-5">
       <div className="row g-4">
@@ -20,9 +20,14 @@ function OtherServices() {
             <div className="service-card text-center p-4">
               <i className={`bi ${service.icon} service-icon`}></i>
               <h5 className="mt-3">{service.title}</h5>
-              <button className="btn btn-outline-primary mt-2">
+
+              <button
+                className="btn btn-outline-primary mt-2"
+                onClick={openModal}
+              >
                 Book Now
               </button>
+
             </div>
           </div>
         ))}
