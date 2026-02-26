@@ -1,7 +1,7 @@
 import logo from "../assets/image/Black_logo1.png";  
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import "./Navbar.css";
 
 function Navbar() {
   return (

@@ -1,8 +1,20 @@
 .store-container {
   display: flex;
+  align-items: center;       /* vertical alignment */
+  gap: 20px;                 /* space between card and image */
   justify-content: center;
-  gap: 40px;
-  padding: 60px 20px;
-  flex-wrap: wrap;
-  background-color: #ffffff;
+  padding: 20px;
+  background-color: #4a6cf7;
+}
+
+.store-card {
+  flex-shrink: 0;            /* prevent card from shrinking */
+  height: 650px;             /* set fixed height for card */
+}
+
+.store-image img {
+  height: 100%;              /* match container height */
+  max-height: 200px;         /* match card height */
+  width: auto;               /* keep aspect ratio */
+  border-radius: 8px;
 }

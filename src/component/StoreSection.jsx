@@ -1,7 +1,7 @@
 import React from "react";
 import StoreCard from "./StoreCard";
 import "./StoreSection.css";
-
+import jdGif from "../assets/image/jd.gif"; 
 const stores = [
   {
     title: "MYND DRYCLEANERS AND LAUNDRY",
@@ -12,6 +12,7 @@ const stores = [
     lng: 73.7854936,
     phoneNumber: "+918087659605"
   }
+
 ];
 
 const StoreSection = () => {
@@ -20,7 +21,11 @@ const StoreSection = () => {
       {stores.map((store, index) => (
         <StoreCard key={index} {...store} />
       ))}
+      <div className="sample-image">
+        <img src={jdGif} alt="Sample" />
+      </div>
     </div>
+    
   );
 };
 

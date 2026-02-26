@@ -1,48 +1,56 @@
-/* Main Slider Container */
-.slider {
-  height: 80vh;          /* Full screen */
+.slide {
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img{
+
   width: 100%;
-  position: relative;
-  overflow: hidden;
+  height: auto;
+
 }
 
-/* Carousel Image */
-.carousel-item {
-  position: relative;
-  height: 70vh;
+img {
+  width: 100%;
+  height: auto;
 }
 
-.carousel-item img {
-  width: 80%;
-  height: 70vh;     /* responsive height */        /* Full screen height */
-  object-fit: cover;      /* Fill without black space */
-  object-position: center;
-  display: block;   /* VERY IMPORTANT */
-}
-
-/* Dark Overlay */
-.carousel-item::before {
+/* Dark overlay */
+.slide::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.2); /* reduce darkness */
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-/* Caption */
-.carousel-caption {
+.overlay {
+  position: relative;
+  text-align: center;
+  color: white;
   z-index: 2;
-  bottom: 30%;
 }
 
-/* Navigation Buttons */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
+.overlay h1 {
+  font-size: 48px;
+  font-weight: bold;
 }
 
-/* Optional: Make arrows more visible */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 60%;
+.overlay p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.overlay button {
+  background: #ff7a00;
+  padding: 12px 30px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
 }

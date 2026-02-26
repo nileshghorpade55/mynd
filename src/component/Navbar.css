@@ -1,0 +1,5 @@
+.navbar-brand img {
+  height: 45px;   /* control logo size */
+  width: auto;    /* keep aspect ratio */
+  object-fit: contain;
+}
