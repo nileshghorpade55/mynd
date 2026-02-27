@@ -1,5 +1,5 @@
 .store-container {
-  display: flex;
+
   align-items: center;       /* vertical alignment */
   gap: 20px;                 /* space between card and image */
   justify-content: center;
@@ -9,7 +9,7 @@
 
 .store-card {
   flex-shrink: 0;            /* prevent card from shrinking */
-  height: 650px;             /* set fixed height for card */
+  height: 350px;             /* set fixed height for card */
 }
 
 .store-image img {
