@@ -46,17 +46,20 @@ function BookForm({ isOpen, onClose }) {
 
   const whatsappNumber = "918087659605"; // your number with country code
 
-  const message = `
-Hello 👋
+const message = `Hello 👋
 
-New Pickup Request:
+🧼 *ND Laundry – New Pickup Request*
 
-Name: ${formData.name}
-Phone: ${formData.phone}
-Address: ${formData.address}
+━━━━━━━━━━━━━━━━
+👤 Customer: ${formData.name}
+📞 Contact: ${formData.phone}
+📍 Location:
+${formData.address}
+━━━━━━━━━━━━━━━━
 
-Please confirm pickup time.
-  `;
+⏰ Please confirm a convenient pickup time.
+
+We’re ready to provide fresh & spotless service! ✨`;
 
   const encodedMessage = encodeURIComponent(message);
 

@@ -3,3 +3,8 @@
   width: auto;    /* keep aspect ratio */
   object-fit: contain;
 }
+
+.navbar {
+  position: relative;
+  z-index: 9999;
+}
