@@ -48,7 +48,7 @@ function BookForm({ isOpen, onClose }) {
 
 const message = `Hello 👋
 
-🧼 *ND Laundry – New Pickup Request*
+🧼 *MYND DryCleaners – New Pickup Request*
 
 ━━━━━━━━━━━━━━━━
 👤 Customer: ${formData.name}
