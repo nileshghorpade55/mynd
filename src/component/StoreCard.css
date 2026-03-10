@@ -1,10 +1,12 @@
 .store-card {
   width: 350px;
-  background: #efefef;
+  background: white;
   border-radius: 25px;
   padding: 30px;
   border: 2px solid #222;
   transition: 0.3s ease;
+  margin: 40px auto; /* centers the card horizontally */
+  text-align: center; /* optional: center text inside */
 }
 
 .store-card:hover {
@@ -32,6 +34,7 @@
 .google-rating {
   display: flex;
   align-items: center;
+  justify-content: center; /* center rating */
   gap: 8px;
   font-weight: 500;
   margin-bottom: 8px;
@@ -46,6 +49,7 @@
 .stars {
   display: flex;
   align-items: center;
+  justify-content: center; /* center stars */
   gap: 6px;
 }
 

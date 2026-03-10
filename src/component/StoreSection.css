@@ -4,7 +4,19 @@
   gap: 20px;                 /* space between card and image */
   justify-content: center;
   padding: 20px;
-  background-color: #4a6cf7;
+  background-color: white !important;
+}
+
+.pricing-image {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.pricing-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .store-card {

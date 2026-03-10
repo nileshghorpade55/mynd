@@ -1,7 +1,7 @@
 .pricing-section {
   padding: 80px 5%;
-   background-color: royalblue !important;
-  color: white;
+   background-color: white !important;
+  color: rgb(12, 11, 11);
   text-align: center;
 }
 
@@ -19,7 +19,7 @@
 .table-row {
   display: grid;
   grid-template-columns: 1.5fr repeat(4, 1fr);
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(171, 164, 164, 0.15);
   padding: 15px;
   border-radius: 10px;
   backdrop-filter: blur(8px);
@@ -37,7 +37,7 @@
 }
 
 .highlight {
-  color: #ffeaa7;
+  color: #0e0e0e;
   font-weight: bold;
 }
 

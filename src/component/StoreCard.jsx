@@ -49,6 +49,8 @@ const StoreCard = ({ title, address, rating, reviews, lat, lng, phone }) => {
         <button onClick={handleWhatsApp}>WhatsApp</button>
       </div>
     </div>
+    
+    
   );
 };
 

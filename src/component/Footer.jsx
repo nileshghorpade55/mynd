@@ -1,79 +1,89 @@
-function Footer() {
+import React from "react";
+import "./Footer.css";
+import { FaWhatsapp, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+
+const Footer = () => {
+
+  const phone = "918087659605";
+
+  const openWhatsApp = () => {
+    const message = "Hello, I want to book a laundry pickup.";
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`);
+  };
+
   return (
-    <footer  className="footer-section text-white">
-      <div id="footer" className="container py-5">
-        <div className="row">
+    <footer className="footer">
 
-          {/* Column 1 */}
-          <div className="col-md-3 mb-4">
-            <h4 className="fw-bold">MYND DRYCLEANER</h4>
-            <p>
-             MYND Laundry provides premium washing and dry cleaning service 
-              leveraging mobile based technology. We provide high quality and 
-              affordable services in a way of care and nurture for your threads.
-            </p>
+      <div className="footer-container">
 
-            {/* Social Icons */}
-            <div className="d-flex gap-3 mt-3">
-              <i className="bi bi-facebook social-icon"></i>
-              <i className="bi bi-twitter social-icon"></i>
-              <i className="bi bi-instagram social-icon"></i>
-              <i className="bi bi-youtube social-icon"></i>
-              <i className="bi bi-linkedin social-icon"></i>
-            </div>
-          </div>
-
-          {/* Column 2 */}
-          <div className="col-md-3 mb-4">
-            <h5 className="fw-bold mb-3">Services</h5>
-            <ul className="list-unstyled">
-              <li>Steam Iron</li>
-              <li>Laundry By Kg</li>
-              <li>Men Dry Clean</li>
-              <li>Women Dry Clean</li>
-              <li>Shoe Cleaning</li>
-              <li>Non Wearables</li>
-            </ul>
-          </div>
-
-          {/* Column 3 */}
-          <div className="col-md-3 mb-4">
-            <h5 className="fw-bold mb-3">Useful link</h5>
-            <ul className="list-unstyled">
-              <li>Privacy Policy</li>
-              <li>Term & Conditions</li>
-              <li>Refund & Cancellation</li>
-              <li>Shipping & Delivery</li>
-              <li>Career</li>
-              <li>About MYND Founder Nilesh Ghorpade/Deepak Ghorpade</li>
-            </ul>
-          </div>
-
-          {/* Column 4 */}
-          <div className="col-md-3 mb-4">
-            <h5 className="fw-bold mb-3">Contact Us</h5>
-
-            <p>
-              <i className="bi bi-geo-alt-fill me-2"></i>
-              Krishna Kunj Mathura Colony Rahatni Road Nakhate Wasti,
-              Opposite to leagcy Aura
-            </p>
-
-            <p>
-              <i className="bi bi-telephone-fill me-2"></i>
-              +91-8087659605
-            </p>
-
-            <p>
-              <i className="bi bi-envelope-fill me-2"></i>
-              mynddrycleaner.com
-            </p>
-          </div>
-
+        {/* About */}
+        <div className="footer-column">
+          <h2>MYND DRYCLEANER</h2>
+          <p>
+            MYND Laundry provides premium washing and dry cleaning service
+            leveraging mobile based technology. We provide high quality and
+            affordable services in a way of care and nurture for your threads.
+          </p>
         </div>
+
+        {/* Services */}
+        <div className="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li>Steam Iron</li>
+            <li>Laundry By Kg</li>
+            <li>Men Dry Clean</li>
+            <li>Women Dry Clean</li>
+            <li>Shoe Cleaning</li>
+            <li>Non Wearables</li>
+          </ul>
+        </div>
+
+        {/* Useful Links */}
+        <div className="footer-column">
+          <h3>Useful Link</h3>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Term & Conditions</li>
+            <li>Refund & Cancellation</li>
+            <li>Shipping & Delivery</li>
+            <li>Career</li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div className="footer-column">
+          <h3>Contact Us</h3>
+
+          <p>
+            <FaMapMarkerAlt /> Krishna Kunj Mathura Colony Rahatni Road
+            Nakhate Wasti, Opposite to Legacy Aura
+          </p>
+
+          <p>
+            <FaPhone /> +91-8087659605
+          </p>
+
+          <p>mynddrycleaner.com</p>
+
+          {/* Google Map */}
+          <iframe
+            title="location"
+            src="https://maps.google.com/maps?q=rahatni%20pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            className="map"
+          ></iframe>
+        </div>
+
       </div>
+
+      {/* WhatsApp Floating Button */}
+
+      <div className="whatsapp-btn" onClick={openWhatsApp}>
+        <FaWhatsapp size={30} />
+      </div>
+
     </footer>
   );
-}
+};
 
 export default Footer;

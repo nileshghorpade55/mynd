@@ -8,7 +8,7 @@ function Navbar() {
 
         <a className="navbar-brand d-flex align-items-center" href="#">
           <img src={logo} width="110" className="me-2" alt="Logo" />
-          Laundry Service
+          DryCleaner
         </a>
 
         <button
