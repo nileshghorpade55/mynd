@@ -76,11 +76,7 @@ const Footer = () => {
 
       </div>
 
-      {/* WhatsApp Floating Button */}
-
-      <div className="whatsapp-btn" onClick={openWhatsApp}>
-        <FaWhatsapp size={30} />
-      </div>
+    
 
     </footer>
   );

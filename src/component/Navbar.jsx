@@ -7,9 +7,9 @@ function Navbar() {
       <div className="container">
 
         <a className="navbar-brand d-flex align-items-center" href="#">
-          <img src={logo} width="110" className="me-2" alt="Logo" />
-          DryCleaner
-        </a>
+  <img src={logo} className="logo-img" alt="Logo" />
+  <span className="brand-text"> DryCleaner</span>
+</a>
 
         <button
           className="navbar-toggler"

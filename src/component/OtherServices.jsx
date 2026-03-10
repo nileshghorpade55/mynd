@@ -19,10 +19,10 @@ function OtherServices({ openModal }) {
           <div className="col-md-3" key={index}>
             <div className="service-card text-center p-4">
               <i className={`bi ${service.icon} service-icon`}></i>
-              <h5 className="mt-3">{service.title}</h5>
+              <h5 className="mt-3 text-white">{service.title}</h5>
 
               <button
-                className="btn btn-outline-primary mt-2"
+                className="btn btn-outline-primary mt-2 text-white"
                 onClick={openModal}
               >
                 Book Now

@@ -19,7 +19,7 @@
 .table-row {
   display: grid;
   grid-template-columns: 1.5fr repeat(4, 1fr);
-  background: rgba(171, 164, 164, 0.15);
+  background: #5C5CFF;
   padding: 15px;
   border-radius: 10px;
   backdrop-filter: blur(8px);
@@ -28,12 +28,12 @@
 }
 
 .table-row:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: #5C5CFF;
 }
 
 .header {
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.3);
+  background: #0000d1;
 }
 
 .highlight {

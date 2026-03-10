@@ -1,12 +1,24 @@
 .navbar-brand img {
   height: 45px;   /* control logo size */
-  width: auto;    /* keep aspect ratio */
+  width: 70px;    /* keep aspect ratio */
   object-fit: contain;
+}
+
+.logo-img {
+  height: 45px;
+  margin-right: 10px;
+}
+
+.brand-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00b4d8;
 }
 
 .navbar {
   position: absolute;
   top: 0;
+
   width:100%;
   z-index: 1050;
 }
