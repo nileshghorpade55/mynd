@@ -5,16 +5,14 @@
 }
 
 .logo-img {
-    height: 70px;   /* increase size */
-  width: auto;
-
+  height: 45px;
+  margin-right: 10px;
 }
 
 .brand-text {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
   color: #00b4d8;
-  font-family: 'Poppins', sans-serif;
 }
 
 .navbar {

@@ -1,17 +1,17 @@
 .slide {
-  height: 75vh;
+  height: 140vh;
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex !important;
   align-items: center;
   justify-content: center;
-  margin-top: 70px; /* push slider below navbar */
+  margin-top: 140px; /* push slider below navbar */
 }
 .slide img{
 
   width: 100%;
-  height: auto;
+  height: 120px;
 
 }
 
