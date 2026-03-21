@@ -181,3 +181,29 @@ h1{
   text-decoration: none;
 }
 /* Updated CSS for a Navbar section end */
+
+.navbar-toggler-icon {
+  background-image: none;
+  width: 30px;
+  height: 3px;
+  background-color: red;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: red;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
