@@ -86,5 +86,5 @@
 }
 
 .button-group button:hover {
-  background-color: #8b0edd;
+  background: linear-gradient(135deg, #00c6ff, #00d4a4);
 }

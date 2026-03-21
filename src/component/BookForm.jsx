@@ -45,21 +45,23 @@ function BookForm({ isOpen, onClose }) {
   }
 
   const whatsappNumber = "918087659605"; // your number with country code
-
 const message = `Hello 👋
 
-🧼 *MYND DryCleaners – New Pickup Request*
+🧼 *MYND DryCleaners – Pickup Request*
 
-━━━━━━━━━━━━━━━━
-👤 Customer: ${formData.name}
-📞 Contact: ${formData.phone}
-📍 Location:
+━━━━━━━━━━━━━━━
+👤 *Customer:* ${formData.name}
+📞 *Phone:* ${formData.phone}
+
+📍 *Address:*
 ${formData.address}
-━━━━━━━━━━━━━━━━
 
-⏰ Please confirm a convenient pickup time.
+━━━━━━━━━━━━━━━
+⏰ *Preferred Pickup Time:* ${formData.time || "Not specified"}
 
-We’re ready to provide fresh & spotless service! ✨`;
+🧺 Services: Fresh & Spotless Cleaning ✨
+
+Please confirm the pickup. Thank you! 🙌`;
 
   const encodedMessage = encodeURIComponent(message);
 

@@ -19,7 +19,7 @@
 .table-row {
   display: grid;
   grid-template-columns: 1.5fr repeat(4, 1fr);
-  background: #5C5CFF;
+   background: linear-gradient(135deg, #00c6ff, #00d4a4);
   padding: 15px;
   border-radius: 10px;
   backdrop-filter: blur(8px);
@@ -33,7 +33,7 @@
 
 .header {
   font-weight: bold;
-  background: #0000d1;
+  background: linear-gradient(135deg, #00c6ff, #00d4a4);
 }
 
 .highlight {

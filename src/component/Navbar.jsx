@@ -27,7 +27,9 @@ function Navbar() {
               fontSize: "1.4rem",    
               fontWeight: "800", 
               lineHeight: "0.9",
-              color: "#00B4D8",
+              background: "linear-gradient(135deg, #00c6ff, #00d4a4)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
               letterSpacing: "0.5px"
             }}>
               DRYCLEANER
