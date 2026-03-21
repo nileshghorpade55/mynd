@@ -18,7 +18,10 @@
 .navbar {
   position: absolute;
   top: 0;
-
+  min-height: 70px;
   width:100%;
   z-index: 1050;
+  color: #ffffff;
 }
+
+

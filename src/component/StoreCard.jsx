@@ -1,7 +1,7 @@
 import React from "react";
 import "./StoreCard.css";
 
-const StoreCard = ({ title, address, rating, reviews, lat, lng, phone }) => {
+const StoreCard = ({ title, address, rating, reviews, lat, lng, phoneNumber }) => {
 
   const handleDirections = () => {
     window.open(
