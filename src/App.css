@@ -4,12 +4,25 @@
   box-sizing: border-box;
 }
 
+P{
+  display:flex;
+}
+
+.container-card {
+  max-width: 1400px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: white !important;
   min-height: 100vh;
-  padding-top: 110px; /* navbar height */
+  padding-top: 190px; /* navbar height */
  font-family: 'Poppins', sans-serif;
 }
 section {
@@ -159,7 +172,7 @@ h1{
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
    background-color: white !important;
 }

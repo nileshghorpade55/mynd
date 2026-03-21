@@ -1,44 +1,29 @@
-import { useState } from "react";
-import Navbar from "./component/Navbar";
-import Footer from "./component/Footer";
-import OtherServices from "./component/OtherServices";
-import PricingComparison from "./component/PricingComparison";
-import ImageSlider from "./component/ImageSlider";
-import StoreSection from "./component/StoreSection";
-import BookForm from "./component/BookForm";
-import MyndContext from "./context/mynd";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import "./App.css";
+import Navbar from "./component/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import PricingList from "./pages/PricingList";
 
 function App() {
 
-  const user = "MYND Drycleaner & Laundry";
-  const [open, setOpen] = useState(false);
-
   return (
-    <>
+    <Router>
+
       <Navbar />
 
-      <ImageSlider />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/pricing" element={<PricingList/>} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
 
-      <MyndContext.Provider value={user}>
-      <OtherServices openModal={() => setOpen(true)} />
 
-<BookForm 
-  isOpen={open}
-  onClose={() => setOpen(false)}/>
-      <PricingComparison />
-      </MyndContext.Provider>
-
-     
-
-      <StoreSection/>
-      <Footer />
-    </>
+    </Router>
   );
 }
 
